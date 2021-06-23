@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+
+
+
+\title{OSLab11}
+\author{fateme emadi }
+\date{June 23,2021}
+\begin{document}
+\maketitle
+\section{Introduction:}
+My name is fateme emadi.I study computer engineering in sajjad university.
+\section{IMAGE}
+\begin{center}
+    
+    \includegraphics[scale=0.03]{img.jpg}
+    \caption{picture}
+    \label{fig:my_label}
+\end{center}
+\section{TABLE}
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ c & java & html \\ 
+ cpp & kotlin & css \\ 
+ python & android & php \\ 
+ \hline
+\end{tabular}
+\end{center}
+\section{MATH EQUATION}
+The famous equation proved by Anishtine is the below equation:
+
+\[E=mc^2\]
+\section{CODE}
+\begin{lstlisting}
+def MergeSort(low,high,lst):
+    lst=lst[0:high]
+    if low<high :
+        m=(low+high)//3
+        n=2*((low+high)//3)
+        MergeSort(low,m)
+        MergeSort(m+1,n)
+        MergeSort(n+1,high)
+        merge(m,n,low,high)
+    return lst
+\end{lstlisting}
+\end{document}
